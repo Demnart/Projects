@@ -20,7 +20,7 @@ namespace snake
             this.simb = simb;
         }
 
-        public  void Draw()
+        public  void Drow()
         {
             Console.SetCursorPosition(x, y);
             Console.Write(simb);
