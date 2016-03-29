@@ -8,14 +8,22 @@ namespace snake
 {
     class Point
     {
-        public int x;
-        public int y;
-        public char sim;
+        private int x;
+        private int y;
+        private char simb;
 
-        public  void Draw(int x, int y, char sim)
+        public Point() { }
+        public Point(int x, int y, char simb)
+        {
+            this.x = x;
+            this.y = y;
+            this.simb = simb;
+        }
+
+        public  void Draw()
         {
             Console.SetCursorPosition(x, y);
-            Console.Write(sim);
+            Console.Write(simb);
         }
     }
 }
