@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace snake
 {
-    class VerticalLine
+    class VerticalLine : Figure
     {
-        List<Point> lpoint;
-
-        public VerticalLine(int x, int yHight, int yBoth, char sym) {
+     
+        public VerticalLine(int yHight, int yBoth, int x , char sym) {
 
             lpoint = new List<Point>();
             for (int y = yHight; y <= yBoth; y++)
@@ -22,14 +21,7 @@ namespace snake
 
         }
         
-        public void Draw()
-        {
-
-            foreach (Point p in lpoint)
-            {
-                p.Drow();
-            }
-        }
+      
 
 
     }
